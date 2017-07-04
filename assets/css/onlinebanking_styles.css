@@ -1,0 +1,282 @@
+body{font-family: arial, helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding:0;
+    margin: 0;
+    background-color: #8ca5cc;
+
+}
+/*global*/
+.container{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+ ul{
+    margin: 0;
+     padding: 0;}
+
+.button_1{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#ffffff;
+}
+
+.dark{
+    padding: 15px;
+    background:#35424a;
+    color:#ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.info{width:60%;
+   }
+table td th{padding-left: 10px;}
+table th{font-weight: bolder;}
+
+/*header*/
+header{
+    background: #002a6b;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #5fe8e1 3px solid;
+    
+}
+
+header a{color: #ffffff;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 16px;
+}
+
+
+
+header li{
+    float:left;
+    display: inline;
+    padding:0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top;10px;
+}
+
+header .highlight, header .current a{
+    color:#e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color:#cccccc;
+    font-weight: bold;
+}
+
+
+/* showcase*/
+#showcase{
+    min-height:600px;
+    background-color: #002a6b;
+    text-align: left;
+    color:antiquewhite;
+    font-weight: bold;
+    border-top: #5fe8e1 3px solid;
+   
+}
+
+
+#showcase .history{width: 40%; }
+#showcase .button_1{margin-left: 15px;}
+#showcase h1{
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 12px;
+}
+
+#showcase input, label{
+   padding: 4px;
+  width: 100%;
+}
+
+#newsletter{
+    padding: 15px;
+    color:#ffffff;
+    background: #002a6b;}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float:right;
+    margin-top: 15px;
+}
+
+#newsletter imput[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/*boxex*/
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float:left;
+    width: 30%;
+    padding;10px;
+    text-align: center;
+}
+
+#boxes .box img{
+    width: 90px;
+    
+}
+
+footer{
+    padding: 20px;
+border-top: #5fe8e1 3px solid;
+    color:#ffffff;
+    background-color:#8ca5cc;
+    text-align: center;
+     
+}
+
+/*sidebar*/
+aside#sidebar{
+    float:right;
+    width: 45%;
+    margin-top: 100px;
+    margin-left: 20px;
+    color: antiquewhite
+}
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%
+        padding:5px;
+}
+
+#prec li{line-height: 26px;}
+
+#main{   background-color: #002a6b;
+min-height: 700px;}
+
+article#main-col{
+    float:left;
+    width: 50%;
+    color: antiquewhite;
+ 
+}
+
+/*services*/
+ul#services  li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+/* media queries*/
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar,
+    table,
+    .dropdown{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase h1{
+        margin-top: 40px;
+    }
+    #newsletter button,
+    .quote button,
+    .history button{
+        display: block;
+        width:100%;
+    }
+    #newsletter form input[type="email"],
+    .quote input,
+    .quote textarea,
+    .history input{
+        width:100%;
+        margin-bottom: 5px;
+    }
+    
+    
+}
+
+
+/* navigation */
+
+ .dropbtn {
+    background-color: #8ca5cc;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #8ca5cc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #002a6b;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+ .dropdown:hover .dropbtn {
+    background-color: #002a6b;
+}
